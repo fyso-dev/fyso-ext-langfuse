@@ -1,0 +1,5 @@
+id: langfuse
+name: {es: Langfuse, en: Langfuse}
+description: {es: Trazas, tokens y costos de los bots, en: Bot traces, tokens and costs}
+icon: workflow
+url: https://cloud.langfuse.com

@@ -1,0 +1,8 @@
+description: Export finished bot traces to Langfuse (names, timing, tokens and cost; never prompts or replies)
+schedule: "*/5 * * * *"
+max_active_runs: 1
+working_dir: ${FYSO_ROOT}
+steps:
+  - id: export
+    command: framework/scripts/run-ext.sh langfuse -- node extensions/langfuse/langfuse.cjs sync
+    output: RESULT

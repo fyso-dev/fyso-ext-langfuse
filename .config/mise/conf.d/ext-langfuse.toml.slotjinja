@@ -1,0 +1,8 @@
+# Langfuse extension: exports finished bot traces (no prompts or replies) to Langfuse.
+# Configuration lives in `mise run secrets`: LANGFUSE_PUBLIC_KEY, LANGFUSE_SECRET_KEY, optional LANGFUSE_BASE_URL.
+[tasks."langfuse:check"]
+description = "Check the Langfuse keys"
+run = "framework/scripts/run-ext.sh langfuse -- node extensions/langfuse/langfuse.cjs check"
+[tasks."langfuse:sync"]
+description = "Export finished bot traces to Langfuse now (also runs every 5 minutes in Dagu)"
+run = "framework/scripts/run-ext.sh langfuse -- node extensions/langfuse/langfuse.cjs sync"

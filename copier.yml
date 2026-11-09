@@ -1,0 +1,16 @@
+# No questions: the whole configuration is the Langfuse keys (and optional base URL) in `mise run secrets`.
+_min_copier_version: "9.19.1"
+_answers_file: .copier-answers.ext-langfuse.yml
+_templates_suffix: .slotjinja
+_exclude:
+  - copier.yml
+  - README.md
+  - .git
+  - .github
+  - .gitignore
+  - mise.toml
+  - package.json
+  - tests
+  - docs
+  - .data
+  - node_modules

@@ -1,0 +1,9 @@
+[tools]
+node = "24.15.0"
+"aqua:astral-sh/uv" = "0.5.1"
+
+[tasks.test]
+run = "node --test tests/*.test.cjs"
+
+[tasks.packaging]
+run = "python3 -m unittest discover -s tests -p 'test_packaging.py'"
