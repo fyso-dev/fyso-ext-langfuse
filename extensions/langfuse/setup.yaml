@@ -1,0 +1,3 @@
+# Setup step (framework D51): the panel shows it with the guided key form; the doctor decides when it is done.
+title: {es: Conectar Langfuse, en: Connect Langfuse}
+description: {es: "Envía las trazas, tokens y costos de los bots a tu proyecto de Langfuse Cloud.", en: "Sends bot traces, tokens and costs to your Langfuse Cloud project."}

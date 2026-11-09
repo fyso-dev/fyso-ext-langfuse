@@ -14,6 +14,7 @@ SLOTS = [
     'extensions/langfuse/doctor.sh',
     'extensions/langfuse/langfuse.cjs',
     'extensions/langfuse/secrets.yaml',
+    'extensions/langfuse/setup.yaml',
     'project/workflows/ext-langfuse-sync.yaml',
 ]
 
@@ -31,7 +32,7 @@ class Packaging(unittest.TestCase):
         with tempfile.TemporaryDirectory(prefix='langfuse-install-') as temporary:
             project = Path(temporary)
             (project / 'README.md').write_text('Project-owned documentation\n')
-            result = run(COPIER + ['copy', '--trust', '--defaults', str(ROOT), str(project)])
+            result = run(COPIER + ['copy', '--trust', '--defaults', '--vcs-ref', 'HEAD', str(ROOT), str(project)])
             self.assertEqual(result.returncode, 0, result.stderr)
             files = sorted(str(p.relative_to(project)) for p in project.rglob('*') if p.is_file())
             self.assertEqual(files, sorted(SLOTS + ['README.md']))
