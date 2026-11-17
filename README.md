@@ -59,3 +59,9 @@ mise run packaging   # the real Copier consumer: slots, validation, tagged upgra
 ```
 
 [Integration details](docs/integration.md).
+
+## License
+
+Copyright (C) 2026 Fyso.
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, version 3 (`AGPL-3.0-only`). It is distributed WITHOUT ANY WARRANTY; see [LICENSE](LICENSE) for the full text.
