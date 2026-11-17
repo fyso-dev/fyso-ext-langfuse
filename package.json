@@ -1,6 +1,7 @@
 {
   "name": "fyso-ext-langfuse",
   "private": true,
+  "license": "AGPL-3.0-only",
   "version": "0.1.0",
   "scripts": {
     "test": "node --test tests/*.test.cjs"
